@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="User Cost Accounting in Extractive Industries – interactive article" />
+    <title>Carbon Budget – aldhaferi.net</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"/>
+    <!-- MathJax for formulas -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand"><a href="index.html">aldhaferi.net</a></div>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="introduction.html">Introduction</a></li>
+          <li><a href="literature.html">Literature Review</a></li>
+          <li><a href="scorecard.html">Reinvestment Scorecard</a></li>
+          <li><a href="swacc.html">SWACC</a></li>
+          <li><a href="dualreporting.html">Dual Reporting</a></li>
+          <li><a href="carbon.html">Carbon Budget</a></li>
+          <li><a href="discussion.html">Discussion</a></li>
+          <li><a href="conclusion.html">Conclusion</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <section id="carbon">
+        <h2>7. Carbon Budget Accounting</h2>
+        <p>
+          Meeting global climate goals means that companies must operate within
+          finite carbon budgets. We illustrate a hypothetical depletion
+          schedule for Anglo American’s operational (Scope 1+2) emissions.
+          Starting from a total allowable carbon budget of 50 Mt CO₂, the
+          schedule shows projected emissions reductions toward net zero. The
+          budget shrinks over time as emissions are released. If emissions
+          reductions lag, the remaining budget falls more quickly, signalling
+          the need for corrective action.
+        </p>
+        <table id="carbon-table" class="display" style="width:100%">
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>Emissions (Mt CO₂)</th>
+              <th>% Change vs Prior</th>
+              <th>Carbon Budget Remaining (Mt)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>2020</td><td>4.5</td><td>–</td><td>50.0</td></tr>
+            <tr><td>2021</td><td>4.4</td><td>-2%</td><td>45.6</td></tr>
+            <tr><td>2022</td><td>4.0</td><td>-9%</td><td>41.6</td></tr>
+            <tr><td>2023</td><td>3.6</td><td>-10%</td><td>38.0</td></tr>
+            <tr><td>2024</td><td>3.3</td><td>-8%</td><td>34.7</td></tr>
+            <tr><td>2025</td><td>3.0</td><td>-10%</td><td>31.7</td></tr>
+            <tr><td>2030</td><td>2.0</td><td>-33%</td><td>20.0</td></tr>
+            <tr><td>2040</td><td>0.0</td><td>-100%</td><td>0.0</td></tr>
+          </tbody>
+        </table>
+        <canvas id="carbonChart" width="400" height="200"></canvas>
+      </section>
+    </main>
+    <footer>
+      <p>© 2025 aldhaferi.net. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

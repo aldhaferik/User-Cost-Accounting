@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="User Cost Accounting in Extractive Industries – interactive article" />
+    <title>SWACC – aldhaferi.net</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"/>
+    <!-- MathJax for formulas -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand"><a href="index.html">aldhaferi.net</a></div>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="introduction.html">Introduction</a></li>
+          <li><a href="literature.html">Literature Review</a></li>
+          <li><a href="scorecard.html">Reinvestment Scorecard</a></li>
+          <li><a href="swacc.html">SWACC</a></li>
+          <li><a href="dualreporting.html">Dual Reporting</a></li>
+          <li><a href="carbon.html">Carbon Budget</a></li>
+          <li><a href="discussion.html">Discussion</a></li>
+          <li><a href="conclusion.html">Conclusion</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <section id="swacc">
+        <h2>5. Sustainability‑Weighted Cost of Capital (SWACC)</h2>
+        <p>
+          A pivotal input in calculating user cost is the discount rate used to
+          determine how much of today’s revenue must be saved to sustain future
+          income. Corporate accounting typically employs a Weighted Average
+          Cost of Capital (WACC) reflecting investors’ required return,
+          whereas intergenerational equity implies using a much lower social
+          discount rate. To bridge these perspectives, we define the
+          <strong>Sustainability‑Weighted Cost of Capital (SWACC)</strong> as a
+          weighted blend of the corporate cost of capital and a social rate:
+        </p>
+        <p class="formula">
+          \[ r_{\text{eff}} = (1-\lambda)\, r_{\text{corp}} + \lambda\, r_{\text{social}} \]
+        </p>
+        <p>
+          where \(\lambda\) (lambda) ranges from 0 to 1. When \(\lambda = 0\) the firm uses its
+          traditional WACC; when \(\lambda = 1\) the firm fully adopts a social rate. A
+          higher \(\lambda\) implies a lower effective discount rate and therefore a
+          larger user cost set‑aside.
+        </p>
+        <canvas id="swaccChart" width="400" height="200"></canvas>
+      </section>
+    </main>
+    <footer>
+      <p>© 2025 aldhaferi.net. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

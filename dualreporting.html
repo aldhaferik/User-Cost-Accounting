@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="User Cost Accounting in Extractive Industries – interactive article" />
+    <title>Dual Reporting – aldhaferi.net</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"/>
+    <!-- MathJax for formulas -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand"><a href="index.html">aldhaferi.net</a></div>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="introduction.html">Introduction</a></li>
+          <li><a href="literature.html">Literature Review</a></li>
+          <li><a href="scorecard.html">Reinvestment Scorecard</a></li>
+          <li><a href="swacc.html">SWACC</a></li>
+          <li><a href="dualreporting.html">Dual Reporting</a></li>
+          <li><a href="carbon.html">Carbon Budget</a></li>
+          <li><a href="discussion.html">Discussion</a></li>
+          <li><a href="conclusion.html">Conclusion</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <section id="dualreporting">
+        <h2>6. Dual Financial Reporting</h2>
+        <p>
+          Traditional financial statements report earnings net of
+          depreciation and depletion based on historical cost. To assess
+          sustainability, we reconstruct a condensed income statement for
+          Freeport‑McMoRan’s 2023 results under two regimes: (A)
+          conventional U.S. GAAP/IFRS accounting and (B) sustainable
+          accounting incorporating the user cost charge. The table and chart
+          below show how recognising natural capital depreciation reduces
+          operating profit, pre‑tax income and net income compared with the
+          traditional view.
+        </p>
+        <table id="dual-table" class="display" style="width:100%">
+          <thead>
+            <tr>
+              <th>Line Item</th>
+              <th>Traditional (USD m)</th>
+              <th>Sustainable (USD m)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Revenue</td><td>22855</td><td>22855</td></tr>
+            <tr><td>Operating Costs (excl. DD&amp;A)</td><td>-14562</td><td>-14562</td></tr>
+            <tr><td>DD&amp;A</td><td>-2068</td><td>-1479</td></tr>
+            <tr><td>User Cost</td><td>0</td><td>-1586</td></tr>
+            <tr><td>Operating Profit (EBIT)</td><td>6225</td><td>5228</td></tr>
+            <tr><td>Interest expense, net</td><td>-219</td><td>-219</td></tr>
+            <tr><td>Pre‑tax Income</td><td>6006</td><td>5010</td></tr>
+            <tr><td>Income Tax (38%)</td><td>-2270</td><td>-1903</td></tr>
+            <tr><td>Equity in affiliated companies’ earnings</td><td>15</td><td>15</td></tr>
+            <tr><td>Net Income</td><td>3751</td><td>3121</td></tr>
+          </tbody>
+        </table>
+        <canvas id="incomeChart" width="400" height="200"></canvas>
+      </section>
+    </main>
+    <footer>
+      <p>© 2025 aldhaferi.net. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

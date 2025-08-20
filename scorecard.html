@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="User Cost Accounting in Extractive Industries – interactive article" />
+    <title>Reinvestment Scorecard – aldhaferi.net</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"/>
+    <!-- MathJax for formulas -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand"><a href="index.html">aldhaferi.net</a></div>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="introduction.html">Introduction</a></li>
+          <li><a href="literature.html">Literature Review</a></li>
+          <li><a href="scorecard.html">Reinvestment Scorecard</a></li>
+          <li><a href="swacc.html">SWACC</a></li>
+          <li><a href="dualreporting.html">Dual Reporting</a></li>
+          <li><a href="carbon.html">Carbon Budget</a></li>
+          <li><a href="discussion.html">Discussion</a></li>
+          <li><a href="conclusion.html">Conclusion</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <section id="scorecard">
+        <h2>4. Reinvestment Scorecard</h2>
+        <p>
+          To assess how extractive companies reinvest resource rents into new
+          capital, we introduce a <strong>Reinvestment Scorecard</strong> that
+          evaluates firms across multiple dimensions. The scorecard provides a
+          qualitative rating—Low (L), Medium (M), Medium/Low (M/L), High (H) or
+          Unknown (UK)—for each criterion. A high score indicates that the
+          company is allocating a significant portion of its earnings toward
+          replacing and expanding its asset base, while a low score suggests
+          the company may be consuming its natural capital and risking
+          unsustainable operations.
+        </p>
+        <p>
+          The table below summarises the scorecard results for three
+          representative companies—Freeport‑McMoRan, Anglo American and Ørsted.
+          The categories include a sustainable capital expenditure (CapEx) ratio,
+          reserve replacement rate, financial reinvestment rate, carbon
+          transition progress and social &amp; human investment. Hover over any
+          rating to see a short description and use the dropdown arrows to
+          filter or sort the table.
+        </p>
+        <table id="scorecard-table" class="display" style="width:100%">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Sustainable CapEx Ratio</th>
+              <th>Reserve Replacement Rate</th>
+              <th>Reinvestment Rate (Financial)</th>
+              <th>Carbon Transition Progress</th>
+              <th>Social &amp; Human Investment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Freeport‑McMoRan</td>
+              <td data-desc="Spending on sustaining and expanding reserves">L</td>
+              <td data-desc="Ability to replace extracted reserves">M</td>
+              <td data-desc="Financial reinvestment of earnings">M/L</td>
+              <td data-desc="Investment in low‑carbon transition">M</td>
+              <td data-desc="Spending on social &amp; human capital">M</td>
+            </tr>
+            <tr>
+              <td>Anglo American</td>
+              <td data-desc="Spending on sustaining and expanding reserves">M</td>
+              <td data-desc="Ability to replace extracted reserves">H</td>
+              <td data-desc="Financial reinvestment of earnings">M</td>
+              <td data-desc="Investment in low‑carbon transition">M</td>
+              <td data-desc="Spending on social &amp; human capital">M</td>
+            </tr>
+            <tr>
+              <td>Ørsted</td>
+              <td data-desc="Spending on sustaining and expanding reserves">H</td>
+              <td data-desc="Ability to replace extracted reserves">H</td>
+              <td data-desc="Financial reinvestment of earnings">H</td>
+              <td data-desc="Investment in low‑carbon transition">UK</td>
+              <td data-desc="Spending on social &amp; human capital">M</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <footer>
+      <p>© 2025 aldhaferi.net. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
